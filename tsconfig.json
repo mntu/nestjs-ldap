@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "strict": true,
+    "pretty": true,
+    "declaration": true,
+    "alwaysStrict": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+
+    "sourceMap": true,
+    "inlineSources": true,
+
+    "outDir": "./dist",
+    "moduleResolution": "node",
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "noLib": false,
+    "target": "es2017",
+    "skipLibCheck": true,
+    "lib": ["es2017"],
+
+    "rootDir": "./lib"
+  },
+  "include": ["typings/global.d.ts", "lib"],
+  "exclude": [
+    "node_modules",
+    "test",
+    "dist",
+    "__mocks__",
+    "**/*spec.ts",
+    "jest.setup.ts"
+  ]
+}
